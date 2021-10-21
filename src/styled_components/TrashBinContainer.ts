@@ -18,6 +18,7 @@ export const TrashBinContainer = styled.div`
     background-color: ${props => props.color ? props.color : props.theme.colors.color1};
     width: ${getWidth()};
     height: ${getHeight()};
+    max-height: 40px;
     border-radius: 5px;
     margin: 10px;
     padding: 10px;

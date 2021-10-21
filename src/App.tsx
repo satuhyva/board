@@ -15,9 +15,9 @@ function App() {
 
     return (
         <AppContainer>
-            <AppTitle>THE BOARD</AppTitle>
+            <AppTitle>TASK BOARD</AppTitle>
             <Info>a wannabe trello app</Info>
-            <Info>{"just drag'n'drop your tasks"}</Info>
+            <Info>{"just drag'n'drop your tasks around"}</Info>
             <CreateNewTask createNewTask={createNewTask}/>
             <AllColumnsContainer>
                 <Column title='WAITING' mode='waiting' tasks={tasks.filter(task => task.mode ==='waiting')}/>
