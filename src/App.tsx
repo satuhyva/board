@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { AppContainer } from './styled_components/AppContainer'
+import { AllColumnsContainer } from './styled_components/AllColumnsContainer'
+import { AppTitle } from './styled_components/AppTitle'
+import Column from './components/Column'
+import CreateNewTask from './components/CreateNewTask'
+import { useAppState } from './utils/useAppState'
+import TrashBin from './components/TrashBin'
+import { Info } from './styled_components/Info'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const { tasks, createNewTask } = useAppState()
+
+
+    return (
+        <AppContainer>
+            <AppTitle>THE BOARD</AppTitle>
+            <Info>a wannabe trello app</Info>
+            <Info>{"just drag'n'drop your tasks"}</Info>
+            <CreateNewTask createNewTask={createNewTask}/>
+            <AllColumnsContainer>
+                <Column title='WAITING' mode='waiting' tasks={tasks.filter(task => task.mode ==='waiting')}/>
+                <Column title='ONGOING' mode='ongoing' tasks={tasks.filter(task => task.mode ==='ongoing')}/>
+                <Column title='COMPLETED' mode='done' tasks={tasks.filter(task => task.mode ==='done')}/>
+            </AllColumnsContainer>
+            <TrashBin/>
+        </AppContainer>
+    )
 }
 
 export default App;
