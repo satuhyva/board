@@ -4,7 +4,7 @@ import { useDrop } from 'react-dnd'
 import { Draggables } from '../types/Draggables'
 import { useAppState } from '../utils/useAppState'
 import { Trash } from '@styled-icons/ionicons-outline'
-import { theme } from '../styled_components/theme'
+import { theme } from '../utils/theme'
 
 
 const TrashBin: React.FC = () => {
@@ -25,6 +25,7 @@ const TrashBin: React.FC = () => {
         <TrashBinContainer
             ref={drop}
             {...colorProps} 
+            data-testid='trash-bin'
         >
             <Trash color={theme.colors.color4} size='100%'/>
         </TrashBinContainer>

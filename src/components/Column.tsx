@@ -7,10 +7,11 @@ import { Mode } from '../types/Mode'
 import { Task } from '../types/Task'
 import Card from './Card'
 import { useAppState } from '../utils/useAppState'
-import { theme } from '../styled_components/theme'
+import { theme } from '../utils/theme'
 
 
-type ColumnProps = {
+
+export type ColumnProps = {
     title: string,
     mode: Mode,
     tasks: Task[]
@@ -34,6 +35,7 @@ const Column: React.FC<ColumnProps> = ({ title, mode, tasks }) => {
         <OneColumnContainer
             ref={drop}
             {...colorProps} 
+            data-testid={`column-${title}`}
         >
             <ColumnTitle>
                 {title}

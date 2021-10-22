@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const NewInput = styled.input`
+export const NewTaskInput = styled.input`
     background-color: ${ props => props.theme.colors.color4 };
     color: ${ props => props.theme.colors.color2 };
     font-size: 1em;

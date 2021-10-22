@@ -24,6 +24,7 @@ const Card: React.FC<ColumnProps> = ({ title, id }) => {
         <CardContainer
             ref={drag}
             style={{ opacity: isDragging ? 0.25 : 1}}
+            data-testid={`card-${id}`}
         >
             <CardTitle>
                 {title}

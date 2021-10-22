@@ -7,10 +7,6 @@ export const theme = {
     }
 }
 
-// color1: '#3F0713',
-// color2: '#B24080',
-// color3: '#ECAC5D',
-// color4: '#FFF9B2',
 
 
 

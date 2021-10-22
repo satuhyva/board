@@ -1,8 +1,6 @@
 import styled from 'styled-components'
+import { getWindowInnerWidth } from '../utils/getWindowInnerWidth'
 
-const getWindowInnerWidth = () => {
-    return window.innerWidth
-}
 
 
 export const AllColumnsContainer = styled.div`

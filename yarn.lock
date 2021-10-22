@@ -7188,6 +7188,13 @@
     "pretty-format" "^26.6.2"
     "semver" "^7.3.2"
 
+"jest-styled-components@^7.0.5":
+  "integrity" "sha512-ZR/r3IKNkgaaVIOThn0Qis4sNQtA352qHjhbxSHeLS3FDIvHSUSJoI2b3kzk+bHHQ1VOeV630usERtnyhyZh4A=="
+  "resolved" "https://registry.npmjs.org/jest-styled-components/-/jest-styled-components-7.0.5.tgz"
+  "version" "7.0.5"
+  dependencies:
+    "css" "^3.0.0"
+
 "jest-util@^26.6.0", "jest-util@^26.6.2":
   "integrity" "sha512-MDW0fKfsn0OI7MS7Euz6h8HNDXVQ0gaM9uW6RjfDmd1DAFcaxX9OqIakHIqhbnmF08Cf2DLDG+ulq8YQQ0Lp0Q=="
   "resolved" "https://registry.npmjs.org/jest-util/-/jest-util-26.6.2.tgz"
@@ -9724,6 +9731,13 @@
   dependencies:
     "dnd-core" "14.0.1"
 
+"react-dnd-test-backend@^14.0.1":
+  "integrity" "sha512-jLGc03K0qd5a0Q+knR8qzUzHqFDEhu3yOxOhJNyWIQucGUbyRhklghJblTJnuvOCNFusnHYOuHERwcvJjXMMbg=="
+  "resolved" "https://registry.npmjs.org/react-dnd-test-backend/-/react-dnd-test-backend-14.0.1.tgz"
+  "version" "14.0.1"
+  dependencies:
+    "dnd-core" "14.0.1"
+
 "react-dnd@^14.0.4":
   "integrity" "sha512-AFJJXzUIWp5WAhgvI85ESkDCawM0lhoVvfo/lrseLXwFdH3kEO3v8I2C81QPqBW2UEyJBIPStOhPMGYGFtq/bg=="
   "resolved" "https://registry.npmjs.org/react-dnd/-/react-dnd-14.0.4.tgz"
@@ -11130,7 +11144,7 @@
     "loader-utils" "^2.0.0"
     "schema-utils" "^2.7.0"
 
-"styled-components@*", "styled-components@^5.3.3", "styled-components@>= 2", "styled-components@>=4.1.0 <6":
+"styled-components@*", "styled-components@^5.3.3", "styled-components@>= 2", "styled-components@>= 5", "styled-components@>=4.1.0 <6":
   "integrity" "sha512-++4iHwBM7ZN+x6DtPPWkCI4vdtwumQ+inA/DdAsqYd4SVgUKJie5vXyzotA00ttcFdQkCng7zc6grwlfIfw+lw=="
   "resolved" "https://registry.npmjs.org/styled-components/-/styled-components-5.3.3.tgz"
   "version" "5.3.3"

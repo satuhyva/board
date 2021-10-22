@@ -18,6 +18,7 @@
   },
   "rules": {
     "react/prop-types": 0,
+    "react/display-name": "off",
     "@typescript-eslint/quotes": [2, "single", { "avoidEscape": true }],
     "@typescript-eslint/indent": ["error", 4, {
       "SwitchCase": 0

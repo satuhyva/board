@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import { CreateNewButton } from '../styled_components/CreateNewButton'
+import { CreateNewTaskButton } from '../styled_components/CreateNewTaskButton'
 import { CreateNewContainer } from '../styled_components/CreateNewContainer'
-import { NewInput } from '../styled_components/NewInput'
+import { NewTaskInput } from '../styled_components/NewTaskInput'
 
 
 
-type CreateNewProps = {
+export type CreateNewTaskProps = {
     createNewTask: (newTask: string) => void
 }
 
-const CreateNewTask: React.FC<CreateNewProps> = ({ createNewTask }) => {
+const CreateNewTask: React.FC<CreateNewTaskProps> = ({ createNewTask }) => {
 
     const [showInput, setShowInput] = useState(false)
     const [newItem, setNewItem] = useState('')
@@ -30,26 +30,26 @@ const CreateNewTask: React.FC<CreateNewProps> = ({ createNewTask }) => {
 
     if (!showInput) {
         return (
-            <CreateNewButton onClick={() => setShowInput(true)}>
+            <CreateNewTaskButton onClick={() => setShowInput(true)}>
                 CREATE NEW TASK
-            </CreateNewButton>)
+            </CreateNewTaskButton>)
     }
 
     return (
         <CreateNewContainer >
-            <NewInput
+            <NewTaskInput
                 value={newItem}
                 onChange={(event) => setNewItem(event.target.value)}
                 onKeyPress={handleKeyboardPress}
                 placeholder='Type the task here ...'
             />
             <div>
-                <CreateNewButton onClick={() => setShowInput(false)}>
+                <CreateNewTaskButton onClick={() => setShowInput(false)}>
                     CANCEL
-                </CreateNewButton>   
-                <CreateNewButton onClick={handleCreateNew}>
+                </CreateNewTaskButton>   
+                <CreateNewTaskButton onClick={handleCreateNew}>
                     CREATE
-                </CreateNewButton>             
+                </CreateNewTaskButton>             
             </div>
 
 

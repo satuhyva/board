@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const CreateNewButton = styled.button`
+export const CreateNewTaskButton = styled.button`
     background-color: ${ props => props.theme.colors.color2 };
     color: ${ props => props.theme.colors.color4 };
     font-size: 1em;

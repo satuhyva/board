@@ -22,11 +22,11 @@ function App() {
             <AllColumnsContainer>
                 <Column title='WAITING' mode='waiting' tasks={tasks.filter(task => task.mode ==='waiting')}/>
                 <Column title='ONGOING' mode='ongoing' tasks={tasks.filter(task => task.mode ==='ongoing')}/>
-                <Column title='COMPLETED' mode='done' tasks={tasks.filter(task => task.mode ==='done')}/>
+                <Column title='DONE' mode='done' tasks={tasks.filter(task => task.mode ==='done')}/>
             </AllColumnsContainer>
             <TrashBin/>
         </AppContainer>
     )
 }
 
-export default App;
+export default App
